@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width:device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="Assets/FONTAWESOME/css/all.css">
+  <link rel="stylesheet" href="Assets/CSS/style.css">
+  <title>Shuffle Word Solver</title>
+  <style>
+   
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+ font-family: 'Bebas Neue', Arial;
+}
+
+  </style>
+ </head>
+ <body>
+  <div id="preloader">
+   <label>©Frankie B Pinat</label>
+   <div id="loader">
+    <span id="line1" class="loading"></span>
+    <span id="line2" class="loading"></span>
+    <span id="line3" class="loading"></span>
+   </div>
+  </div>
+  <div id="shade"></div>
+  <div id="popUp">
+   <h1>Oopss</h1>
+   <i class="fa fa-times" onclick="closePopUp()"></i>
+   <p>looks like that doesn't match any words.</p>
+   <p>This may result because the list only contains words in english dictionary.</p>
+   <p>Feel free to try again.</p>
+  </div>
+  <div id="nav">
+   <div id="title" class="innerNav">
+    <div class="content">
+     <h1 class="shuffle">Shuffle</h1>
+     <div class="box">
+      <span>Word</span>
+      <span>Solver</span>
+     </div>
+    </div>
+   </div>
+   <div id="title1" class="innerNav">
+    <div class="content">
+     <h1 class="shuffle">Solve</h1>
+     <div class="box1">
+      <span>By typing</span>
+      <span>The Letters</span>
+     </div>
+    </div>
+   </div>
+   <div id="title2" class="innerNav">
+    <div class="content">
+     <h1 class="shuffle">About</h1>
+     <div class="box2">
+      <span>This</span>
+      <span>App</span>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div id="main">
+   <div id="frstB" class="mainB">
+    <div id="homeB" class="cards" onclick="oneT()">
+     <div class="circle"></div>
+     <div class="iconB">
+      <i class="fa fa-home"></i>
+     </div>
+     <h1>Shuffle<br>word solver</h1>
+    </div>
+    <div id="solveB" class="cards" onclick="twoT()">
+     <div class="circle"></div>
+     <div class="iconB">
+      <i class="fa fa-unlock-alt"></i>
+     </div>
+     <h1>Type<br>and solve</h1>
+    </div>
+    <div id="aboutB" class="cards" onclick="threeT()">
+     <div class="circle"></div>
+     <div class="iconB">
+      <i class="fa fa-cog"></i>
+     </div>
+     <h1>Go to<br>about page</h1>
+    </div>
+   </div>
+   <div id="scndB" class="mainB">
+    <div class="inputBox">
+     <input id="inputBox" type="text">
+     <button onclick="solve()">Solve</button>
+    </div>
+    <div id="resultBox" class="resultBox">
+     <label>Result</label>
+    </div>
+   </div>
+   <div id="thrdB" class="mainB">
+    <div id="accordionB">
+     <div id="frstA" class="accordion active" onclick="frstA()">
+      <h1>How this app works?</h1>
+      <p>This app basically requires the user to input the letters they want to unshuffle then it will search all the words that correspond to the given letters and display the result.</p>
+     </div>
+     <div id="scndA" class="accordion" onclick="scndA()">
+      <h1>What is the purpose of this app?</h1>
+      <p>This app is developed for the purpose of making unshuffling word easily by using a computer program to automatically finish the task. This can be use for puzzle games just like scrabble, word search, and more. </p>
+     </div>
+     <div id="thrdA" class="accordion" onclick="thrdA()">
+      <h1>Who and why this app is developed?</h1>
+      <p>This app is developed by Frankie B Pinat because of module question the word to match answer for letters. Gets nyo ba? sorry naubusan nako ng english.</p>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div id="navB">
+   <div id="tabB" class="box1 active" onclick="one()">
+    <i class="fa fa-home"></i>
+    <p></p>
+   </div>
+   <div id="tabB1" class="box1" onclick="two()">
+    <i class="fa fa-unlock-alt"></i>
+    <p></p>
+   </div>
+   <div id="tabB2" class="box1" onclick="three()">
+    <i class="fa fa-cog"></i>
+    <p></p>
+   </div>
+  </div>
+  <script src="Assets/BAFFLE/package/dist/baffle.min.js"></script>
+  <script src="Assets/JQUERY/jquery-3.5.1.min.js"></script>
+  <script src="Assets/JS/main.js"></script>
+ </body>
+</html>
